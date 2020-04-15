@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApplicationcore.netmultp.Models;
+using WebApplicationcore.netmultp.Models.ViewModels;
 
 namespace WebApplicationcore.netmultp.Controllers
 {
@@ -18,7 +19,7 @@ namespace WebApplicationcore.netmultp.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
+            ViewData["Email"] = "renatoads1@gmail.com";
             return View();
         }
 

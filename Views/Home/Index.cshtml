@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@{    ViewData["Title"] = "Home Page"; }
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
@@ -15,7 +13,7 @@
                 <p>
                     Learn how to build ASP.NET apps that can run anywhere.
                     <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
+                       
                     </a>
                 </p>
             </div>
@@ -82,6 +80,7 @@
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
         </ul>
+       
     </div>
     <div class="col-md-3">
         <h2>Run &amp; Deploy</h2>
@@ -89,6 +88,17 @@
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+            <li>
+                @{
+                    ViewData["Email"] = "renatoads1@gmail.com";
+
+                    for (int x = 0; x < 10; x++)
+                    {
+                        Write(x.ToString());
+                        @ViewData["Email"];
+                    }
+                }
+            </li>
         </ul>
     </div>
 </div>

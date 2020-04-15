@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApplicationcore.netmultp.Models
+namespace WebApplicationcore.netmultp.Models.ViewModels
 {
     public class ErrorViewModel
     {
